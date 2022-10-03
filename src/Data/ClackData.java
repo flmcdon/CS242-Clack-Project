@@ -36,7 +36,11 @@ public abstract class ClackData {
         return this.username;
     }
 
-    public abstract Date getDate();
+    public Date getDate() {
+        return this.date;
+    }
+
+    public abstract String getData();
 
 
 }
