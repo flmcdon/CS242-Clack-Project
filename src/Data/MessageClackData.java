@@ -1,5 +1,7 @@
 package Data;
 
+import Main.ClackServer;
+
 public class MessageClackData extends ClackData {
 
     public String message;
@@ -11,7 +13,13 @@ public class MessageClackData extends ClackData {
     public String getData() {
         return this.message;
     }
-
+    public int hashCode(){
+        return 0x750;
+    }
+    public boolean equals(MessageClackData other){
+        return
+                this.message == other.message;
+    }
     public String toString(){
         return "This class is called the MessageClackData class." + "\n " +
                 " It is responsible for overwriting," + "\n" +
