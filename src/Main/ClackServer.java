@@ -1,15 +1,28 @@
 package Main;
 
+import Data.ClackData;
+
 //Class declaration for ClackServer
-public class ClackServer  {
+public class ClackServer {
 
     //Declaration of local variables
     public int port;
     public boolean closeConnection;
     public final int defPort = 7000;
 
-    public String dataToReceiveFromClient;
-    public String dataToSendToClient;
+    ClackData dataToReceiveFromClient = new ClackData() {
+
+        //Allows for instantiation of ClackData
+        public String getData() {
+            return null;
+        }
+    };
+    ClackData dataToSendToClient = new ClackData() {
+        //Allows for instantiation of ClackData
+        public String getData() {
+            return null;
+        }
+    };
 
     //Constructor for ClackServer that takes a port variable
     public void ClackServer( int port ){
