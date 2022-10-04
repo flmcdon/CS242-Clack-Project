@@ -13,6 +13,11 @@ public class MessageClackData extends ClackData {
         this.message = message;
     }
 
+    public void MessageClackData (){
+        super.ClackData();
+        this.message = message;
+    }
+
     //Method to return Data that is a message
     public String getData() {
         return this.message;
