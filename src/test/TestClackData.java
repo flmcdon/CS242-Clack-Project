@@ -6,8 +6,11 @@ import Data.ClackData;
 
 public class TestClackData {
     public void main (String[] args) {
-        MessageClackData mcd = new MessageClackData();
+        MessageClackData messagecd = new MessageClackData();
         FileClackData fcd = new FileClackData();
+
+        messagecd.getData();
+        messagecd.equals("message");
 
 
 
