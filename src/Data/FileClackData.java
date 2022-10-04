@@ -55,7 +55,8 @@ public class FileClackData extends ClackData {
 
     //Overwritten hashcode function
     public int hashCode() {
-         return 0x900;
+        String.str;
+        str.hashCode();
     }
 
     //Overwritten equals code

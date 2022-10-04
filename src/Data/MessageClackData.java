@@ -24,7 +24,8 @@ public class MessageClackData extends ClackData {
     }
     //Overwritten hashcode method
     public int hashCode(){
-        return 0x750;
+        String.str;
+        str.hashCode();
     }
 
     //Overwritten equals method

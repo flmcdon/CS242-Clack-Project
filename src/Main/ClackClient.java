@@ -23,10 +23,12 @@ public class ClackClient {
     };
 
     ClackData dataToReceiveFromServer = new ClackData() {
-        //Allows for ClackData Object
-        public String getData() {
-            return null;
-        }
+    //Allows for ClackData Object
+    public String getData() {
+        return null;
+    }
+
+
     };
 
     //Constructor that takes userName, hostName, port, and connection. Sets dataToSendToServer and dataToReceiveFromServer as null.
@@ -37,9 +39,20 @@ public class ClackClient {
         dataToSendToServer = null;
         dataToReceiveFromServer = null;
     }
-
+    //Constructor that takes userName and hostName, and sets port value to 7000
     public void ClackClient (String userName, String hostName){
-        super.ClackClient(userName,hostName,7000);
+        this.ClackClient(userName,hostName,7000);
+    }
+
+    //Constructor that takes userName, and sets hostName to "localHost"
+    public void ClackClient (String userName){
+        this.userName = userName;
+        hostName = "localhost";
+    }
+
+    //Default constructor for ClackClient. Sets userName to "anonymouse"
+    public void ClackClient(){
+        this.ClackClient("anonymous");
     }
 
     //Method to start
@@ -84,7 +97,8 @@ public class ClackClient {
 
     //Overwritten Hashcode
     public int hashCode(){
-        return 0x400;
+        String.str;
+        str.hashCode();
     }
 
     //Overwritten equals method
