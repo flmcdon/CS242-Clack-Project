@@ -1,6 +1,9 @@
 package Main;
 
+//Class declaration for ClackServer
 public class ClackServer  {
+
+    //Declaration of local variables
     public int port;
     public boolean closeConnection;
     public final int defPort = 7000;
@@ -8,33 +11,39 @@ public class ClackServer  {
     public String dataToReceiveFromClient;
     public String dataToSendToClient;
 
-
+    //Constructor for ClackServer that takes a port variable
     public void ClackServer( int port ){
         this.port = port;
         this.dataToReceiveFromClient = null;
         this.dataToSendToClient = null;
     }
-    public void SlackServer(){
+    //Default Constructor for ClackServer that set port default to 7000
+    public void ClackServer(){
         this.ClackServer(defPort);
     }
+    //Method for start - temporarily empty
     public void start(){
 
     }
-
+    //Method for receiveData - temporarily empty
     public void receiveData(){
 
     }
+    //Method for sendData - temporarily empty
     public void sendData(){
 
     }
 
+    //Method for getPort - returns the port
     public int getPort(){
         return this.port;
     }
 
+    //Overwritten hashCode method
     public int hashCode(){
         return 0x800;
     }
+    //Overwritten equals method
     public boolean equals(ClackServer other){
         return
                 this.port == other.port &&
@@ -42,6 +51,7 @@ public class ClackServer  {
                 this.dataToReceiveFromClient == other.dataToReceiveFromClient;
     }
 
+    //Overwritten toString method
     public String toString(){
         return "This class is called the ClackServer class." + "\n " +
                 " It is responsible for overwriting," + "\n" +
